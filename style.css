@@ -1,0 +1,99 @@
+body {
+  background-color: #16a085;
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.book .overlay {
+  margin-top: 30px;
+  margin-bottom: 30 px;
+  font-size: xx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: var(--black);
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 30 px;
+  text-align: center;
+  font-family: "georgia";
+  color: #fff;
+}
+
+h3,
+p {
+  text-align: center;
+  text-shadow: #333;
+  font-family: "josefin sans";
+}
+
+.book.row {
+  align-items: center;
+  text-align: justify;
+  flex-wrap: wrap;
+  gap: 2rem;
+  min-width: 412px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.book .row form {
+  margin-top: 30px;
+  margin-bottom: 30 px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex: 1 1 45rem;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+.book .column form {
+  margin-top: 30px;
+  margin-bottom: 30 px;
+  margin-left: 50px;
+  margin-right: 50px;
+  flex: 1 1 45rem;
+  background: #fff;
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.book .row form h3 {
+  color: var(--black);
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.book .row form .box {
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 100%;
+  margin: 0.7rem 0;
+  border-radius: 0.5rem;
+  border: var(--border);
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  padding: 1rem;
+}
+
+.book .row form .btn {
+  padding: 1rem 4rem;
+  box-align: center;
+}
