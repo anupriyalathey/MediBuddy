@@ -1,157 +1,55 @@
-:root {
-    --green: #16a085;
-    --black: rgb(54, 37, 37);
-    --light-color: rgb(54, 37, 37);
-    --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
-    --text-shadow: 0.4rem 0.4rem 0 rgba(133, 99, 99, 0.2);
-    --border: 0.2rem solid var(--green);
-  }
-  .header{
-    padding:2rem 9%;
-    position: fixed;
-    top:0; left: 0; right: 0;
-    z-index: 1000;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #16a085;
-}
+<!Booking Section start>
+<html>
+<link rel="stylesheet" href="Appointment Box.css">
+<header class="header">
 
-.header .logo{
-    font-size: 2.5rem;
-    color: var(--black);
-}
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> MediBuddy. </a>
 
-.header .logo i{
-    color: var(--green);
-}
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#services">services</a>
+        <a href="#book">book</a>
+    </nav>
 
-.header .navbar a{
-    font-size: 1.7rem;
-    color: var(--light-color);
-    margin-left: 2rem;
-}
+    <div id="menu-btn" class="fas fa-bars"></div>
 
-.header .navbar a:hover{
-    color: var(--green);
-}
+</header>
 
-body {
-    background-color: #ffffff;
-    background-size: cover;
-    background-position: center;
-}
+<section class="book" id="book">
+    <div class="overlay">
+    </div>    
 
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding: 0;
-    box-sizing: border-box;
-    outline: none; border: none;
-    text-transform: capitalize;
-    transition: all .2s ease-out;
-    text-decoration: none;
-}
-
-html{
-    font-size: 62.5%;
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-}
-
-  *{padding: 0; margin: 0; box-sizing: border-box;
-}
+    <div class="container">
+        <div class="pt-5 text-white">
     
-  .book .overlay{
-    margin-top:30px;
-    margin-bottom:30 px;
-    font-size: xx-large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: var(--black);
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #333;      
-  }
-  
-  h1 {
-    margin-top:30px;
-    margin-bottom:30 px;
-    text-align: center;
-	font-family: 'georgia';
-    color: #fff;
-  }
-  
-  h3, p {
-    text-align: center;
-    text-shadow: #333;
-	font-family: 'josefin sans';
-  }
-  
-.book.row {
-    align-items: center;
-    text-align: justify;
-    flex-wrap: wrap;
-    gap:2rem;
-    min-width: 412px;
-    border: 1px solid 16a085;
+    <div class="row">
+    <h1 class="heading"><span>Book Now
+    </span></h1>
+    <div class="col-lg-6 offset-lg-3">
 
-}
+    <div class="img">
+        <img src="" alt="">
+    </div>
+    <form action="">
+        <input type="text" placeholder="First Name" class="box">
+        <input type="text" placeholder="Last Name" class="box">
+        <input type="email" placeholder="Email Id" class="box">
+        <input type="number" placeholder="Phone Number" class="box">
 
-.book .row form{
-    margin-top:30px;
-    margin-bottom:30 px;
-    margin-left: 500px;
-    margin-right: 100px;
-    flex:1 1 45rem;
-    background: #fff;
-    border:var(--border);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    padding: 2rem;
-    border-radius: .5rem;
-    border: 1px solid #16a085;
-}
-.book .column form{
-    margin-top:30px;
-    margin-bottom:50 px;
-    margin-left: 500x;
-    margin-right: 100px;
-    flex:1 1 45rem;
-    background: #fff;
-    border:var(--border);
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    padding: 2rem;
-    border-radius: .5rem;
-    border: 1px solid #16a085;
-}
+            
+    </form>
 
+    <div class="column">
+        <form action="">
 
-.book .row form h3{
-    color:var(--black);
-    padding-bottom: 1rem;
-    margin-bottom:50 px;
-    font-size: 3rem;
-}
+        <input type="date" class="box">
+        <input type="time" class="box">
+        <input type="submit" value="Book Now" class="btn">
 
-.book .row form .box{
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom:50 px;
-    width: 100%;
-    margin:.7rem 0;
-    border-radius: .5rem;
-    border:var(--border);
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 1rem;
-}
+        </form>
+    </div>
+    </div>
+    </div>
 
-.book .row form .btn{
-    padding:1rem 4rem;
-    box-align: center;
-
-}
-
+</section>
+</html>
